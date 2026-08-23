@@ -4,15 +4,41 @@ Save your time, bandwidth, storage, money... and Earth's climate too !
 
 ## Featured
 
-Work-in-progress project to publish copy cleaned of Google packages as **standalone API client for YouTube service only**.
+Copy cleaned of Google packages as **standalone API client for YouTube service only**.
+
+**IMPORTANT:** 
+
+Don't install this package if you need anothers services from google/apiclient-services.
 
 ## Installation
 
-**IMPORTANT:** don't install this package if you use anothers services from google/apiclient-services.
+### Remove Google's packages
 
 ```bash
 composer remove google/apiclient
 composer remove google/apiclient-services
+```
+
+### Remove Google\Task\Composer::cleanup from your composer.json
+
+```json
+{
+    ...
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "YouTube"
+        ]
+    },
+    ...
+}
+```
+
+### Require this package only
+
+```bash
 composer require oliezekat/smart-youtube-api-client
 ```
 
