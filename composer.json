@@ -22,5 +22,16 @@
     "conflict": {
         "google/apiclient": "*",
         "google/apiclient-services": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Google\\": "src/google/apiclient/src/"
+        },
+        "files": [
+            "src/google/apiclient/src/aliases.php"
+        ],
+        "classmap": [
+            "src/google/apiclient/src/aliases.php"
+        ]
     }
 }
