@@ -25,10 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Google\\": "src/google/apiclient/src/"
+            "Google\\": "src/google/apiclient/src/",
+            "Google\\Service\\": "src/google/apiclient-services/src/"
         },
         "files": [
-            "src/google/apiclient/src/aliases.php"
+            "src/google/apiclient/src/aliases.php",
+            "src/google/apiclient-services/autoload.php"
         ],
         "classmap": [
             "src/google/apiclient/src/aliases.php"
