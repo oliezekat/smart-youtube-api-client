@@ -1,7 +1,7 @@
 {
     "name": "oliezekat/smart-youtube-api-client",
     "type": "library",
-    "description": "Files touch() storage implementation for Symfony Lock component",
+    "description": "Save your time, bandwidth, storage, money... and Earth's climate too !",
     "keywords": ["youtube", "youtube-api"],
     "license": "Apache-2.0",
     "authors": [
@@ -12,6 +12,11 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "google/auth": "^1.37",
+        "firebase/php-jwt": "^6.0||^7.0",
+        "monolog/monolog": "^2.9||^3.0",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "guzzlehttp/psr7": "^2.6"
     }
 }
