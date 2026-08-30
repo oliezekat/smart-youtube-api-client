@@ -48,3 +48,8 @@ jobs:
 
     - name: Install dependencies
       run: composer update --prefer-dist --no-interaction --no-progress --optimize-autoloader
+
+    - name: Run PHPUnit test suite
+      env:
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      run: composer run-script test
