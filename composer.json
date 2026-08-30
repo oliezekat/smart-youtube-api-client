@@ -2,7 +2,7 @@
     "name": "oliezekat/smart-youtube-api-client",
     "type": "library",
     "description": "Save your time, bandwidth, storage, money... and Earth's climate too !",
-    "keywords": ["youtube", "youtube-api"],
+    "keywords": ["youtube", "youtube-api", "youtube-client"],
     "license": "Apache-2.0",
     "authors": [
         {
@@ -35,5 +35,17 @@
         "classmap": [
             "src/google/apiclient/src/aliases.php"
         ]
-    }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^13.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oliezekat\\SmartYoutubeApiClient\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+	}
 }

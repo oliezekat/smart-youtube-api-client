@@ -42,6 +42,10 @@ composer remove google/apiclient-services
 composer require oliezekat/smart-youtube-api-client
 ```
 
+### PHPUnit requirements
+
+Defines 'GOOGLE_API_KEY' environment variable with API key from [Google Developer Console's](https://console.developers.google.com/).
+
 ## Resources
 
  * [Smart YouTube API client](https://github.com/oliezekat/smart-youtube-api-client) repository on *GitHub*
